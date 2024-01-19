@@ -1,0 +1,411 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ol {
+  list-style-type: none;
+}
+ol li {
+  font-weight: 700;
+  color: red;
+}
+ol #li-1 {
+  color: green;
+}
+ol #li-2 {
+  color: blue;
+}
+
+/* prevents adjsutments of font size orientation changes in IE on windoes phone and in ios */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+/* default styings that wont change across all devices like heading, navigation and footer */
+@media screen and (min-width: 500px) {
+  body {
+    background-image: url("resources/image.jpeg");
+  }
+  body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body nav .nav1 {
+    display: flex;
+    flex-direction: row;
+  }
+  body nav .nav1 .logo1 {
+    display: flex;
+    flex-direction: row;
+  }
+  body nav .nav1 .logo1 img {
+    display: flex;
+    width: 50px;
+    border-radius: 100px;
+    height: 50px;
+    align-items: center;
+  }
+  body nav .nav1 .logo1 p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  body nav .nav1 ul,
+  body nav .nav1 li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 14px;
+  }
+  body nav .nav2 {
+    display: flex;
+    flex-direction: column;
+  }
+  body nav .nav2 ul,
+  body nav .nav2 li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin: 10px;
+    margin-right: 30px;
+    margin-top: 13px;
+  }
+  body nav .nav2 ul #sign,
+  body nav .nav2 li #sign {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 100px;
+    height: 20px;
+    justify-content: center;
+    background-color: rgb(24, 47, 179);
+    color: wheat;
+  }
+  body .container1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 70px;
+  }
+  body .container1 .text {
+    display: flex;
+    flex-direction: column;
+  }
+  body .container1 .text #p1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: cursive;
+    margin-left: 10px;
+  }
+  body .container1 .text #p1 #color {
+    display: flex;
+    color: rgb(224, 26, 59);
+  }
+  body .container1 .text #p2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  body .container1 .button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+  }
+  body .container1 .button #getstarted {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 20px;
+    background-color: blue;
+    color: aliceblue;
+  }
+  body .container1 .button #watchdemo {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body .container1 .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  body .container1 .images .one {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 820px;
+    justify-content: center;
+  }
+  body .container1 .images .one #coast {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 300px;
+    width: 320px;
+  }
+  body .container1 .images .one #tourist {
+    display: flex;
+    border-radius: 10px;
+    height: 300px;
+    align-items: center;
+  }
+  body .container1 .images .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .container1 .images .two #tourist4 {
+    display: flex;
+    border-radius: 10px;
+    height: 300px;
+    margin-right: 10px;
+  }
+  body .footer {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+  }
+  body .footer img {
+    display: flex;
+    width: 400px;
+    margin: 19px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("./images/image.jpeg");
+  }
+  body nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body nav .nav1 {
+    display: flex;
+    flex-direction: row;
+  }
+  body nav .nav1 .logo1 {
+    display: flex;
+    flex-direction: row;
+  }
+  body nav .nav1 .logo1 img {
+    display: flex;
+    width: 50px;
+    border-radius: 100px;
+    height: 50px;
+    align-items: center;
+  }
+  body nav .nav1 .logo1 p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  body nav .nav1 ul,
+  body nav .nav1 li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin-left: 40px;
+  }
+  body nav .nav2 {
+    display: flex;
+    flex-direction: column;
+  }
+  body nav .nav2 ul,
+  body nav .nav2 li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin: 10px;
+    margin-right: 30px;
+  }
+  body nav .nav2 ul #sign,
+  body nav .nav2 li #sign {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 100px;
+    height: 20px;
+    justify-content: center;
+    background-color: rgb(24, 47, 179);
+    color: wheat;
+  }
+  body .container1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 90px;
+  }
+  body .container1 .text {
+    display: flex;
+    flex-direction: column;
+  }
+  body .container1 .text #p1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: cursive;
+    margin-left: 10px;
+  }
+  body .container1 .text #p1 #color {
+    display: flex;
+    color: rgb(224, 26, 59);
+  }
+  body .container1 .text #p2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  body .container1 .button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+  }
+  body .container1 .button #getstarted {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 20px;
+    background-color: blue;
+    color: aliceblue;
+  }
+  body .container1 .button #watchdemo {
+    display: flex;
+    height: 30px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  body .container1 .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  body .container1 .images .one {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 820px;
+    justify-content: center;
+  }
+  body .container1 .images .one #coast {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    height: 400px;
+    width: 320px;
+  }
+  body .container1 .images .one #tourist {
+    display: flex;
+    border-radius: 10px;
+    height: 400px;
+    align-items: center;
+  }
+  body .container1 .images .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .container1 .images .two #tourist4 {
+    display: flex;
+    border-radius: 10px;
+    height: 700px;
+    width: 350px;
+    margin-right: 50px;
+  }
+  body .footer {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+  }
+  body .footer img {
+    display: flex;
+    width: 100px;
+    margin: 80px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
